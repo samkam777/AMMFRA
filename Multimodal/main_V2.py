@@ -36,7 +36,7 @@ from DCN_V2 import DCNV2
 import warnings
 warnings.filterwarnings("ignore")
 
-data_path = "/home/jadeting/samkam/code/dataset/data/"
+data_path = "./data/"
 
 
 
@@ -455,7 +455,7 @@ def train(args):
     model = model.to(device)
 
     # hyper-parameter
-    hyper_param = "_algorithm_" + str(args.algorithm) + "_"
+    hyper_param = "_alg_" + str(args.algorithm) + "_exp_" + str(args.exp) + "_"
     print("hyper_param: {}\t".format(hyper_param))
 
     # running time

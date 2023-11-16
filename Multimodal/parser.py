@@ -28,6 +28,12 @@ def parser():
                         type=str,
                         default="BST",
                         choices=["NeuMF", "BST", "Item2Vec", "AutoInt", "DCNV2", "withoutMulti"])
+    
+    parser.add_argument("--exp",
+                        type=str,
+                        default="main_V2",
+                        choices=["main_V2", "main_wo_txt", "main_wo_img", "main_wo_transformer", "main_only_txt", "main_only_img", "main_only_transformer"])
+
 
     # get time
     parser.add_argument("--_running_time",
